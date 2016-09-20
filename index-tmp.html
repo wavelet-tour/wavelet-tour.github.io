@@ -1,0 +1,83 @@
+---
+layout: page
+title: "Data @ ENS"
+description: "Data Science Seminar at ENS"
+header-img: "img/ens1.png"
+---
+
+<p>
+   Welcome to the Data Science seminar of the <a href="http://www.ens.fr/">ENS</a>.
+</p>
+
+<p>
+  The goal of this seminar is TODO.
+  The seminar usually takes place the first Tuesday of each month.
+</p>
+
+<p>
+  You can check the la <a href="next/">list of the following seminars</a> and the <a href="past/">list of past seminars</a>.
+</p>
+
+
+<p>
+  The organizers:
+  <ul>
+  <li><a href="http://krzakala.org/">Florent Krzakala (ENS)</a></li>
+  <li><a href="https://www.di.ens.fr/~mallat/">Stéphane Mallat (ENS)</li>
+    <li><a href="http://gpeyre.github.io/">Gabriel Peyré (CNRS and ENS)</a></li>
+  </ul>
+</p>
+
+<hr/>
+
+<h2>Thanks</h2>
+
+
+<p align="center">
+
+<a href="http://www.ens.fr">
+<img width="200" src="img/logo-ens.jpg"/>
+</a>
+<a href="https://www.cfm.fr">
+<img width="200" src="img/logo-cfm.png"/>
+</a>
+
+
+</p>
+
+<hr/>
+
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
+<hr>
+{% endfor %}
+
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

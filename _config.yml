@@ -1,0 +1,19 @@
+# Usign the Clean Blog theme
+
+title: A Wavelet Tour of Signal Processing
+author: wavelet-tour
+email: gabriel.peyre@ens.fr
+description: Web site of the book
+baseurl: ""
+url: "http://wavelet-tour.github.io/"
+github_username:  wavelet-tour
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 5
+exclude: ["node_modules"]
+
+name: A Wavelet Tour of Signal Processing
+gems:
+  - jekyll-feed
