@@ -11,6 +11,11 @@ Welcome to the home page of the Wavelet Tour book
 This web page gathers materials to complement the third edition of the book _A Wavelet Tour of Signal Processing, 3rd edition, The Sparse Way, of [Stéphane Mallat](https://www.di.ens.fr/~mallat/)_. In particular you can download all the [figures](figures/) from the book and perform [numerical experiments](numerics/) using Matlab or Scilab. Solutions of selected problems from the book [can also be obtained](exercises/).
 
 
+Getting the book
+---------------
+
+You can buy the book from your favorite bookstore, for instance [Amazon](https://www.amazon.com/Wavelet-Tour-Signal-Processing-Third/dp/0123743702/ref=sr_1_1?ie=UTF8&qid=1474411522&sr=8-1&keywords=wavelet+tour) or [Barnes and Noble](http://www.barnesandnoble.com/w/wavelet-tour-of-signal-processing-stephane-mallat/1100662503?ean=9780123743701). See also the page of [the editor](http://www.sciencedirect.com/science/book/9780123743701).
+
 Download the first chapter
 ---------------
 
